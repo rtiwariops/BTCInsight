@@ -4,6 +4,7 @@ from .. import app
 
 
 @home.route('/')
+@home.route('/index')
 def index():
     """
     Render the dashboard template on the /dashboard route
