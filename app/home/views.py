@@ -3,7 +3,7 @@ from . import home
 from .. import app
 
 
-@home.route('/')
+@home.route('/', methods=['GET'])
 @home.route('/index')
 def index():
     """
