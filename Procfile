@@ -1,1 +1,1 @@
-web: gunicorn BTCINSIGHT:app
+web: gunicorn app
