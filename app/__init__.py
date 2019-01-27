@@ -4,7 +4,7 @@
 from flask import Flask
 
 # local imports
-from instance.config import app_config
+# from instance.config import app_config
 
 app = Flask(__name__)
 
