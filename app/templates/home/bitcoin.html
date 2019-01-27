@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>BTCInsight | Reporting, Analysis and detailed statistics of Bitcoin</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% include 'custom/header.html' %}
+</head>
+<body>
+<!-- Wrapper-->
+<div class="wrapper">
+    <!-- Header-->
+    {% include 'custom/inner-header.html' %}
+    <!-- End header-->
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li>
+                    <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
+                </li>
+                <li class="nav-info">
+                    <div class="m-t-xs">
+                        <a href="https://twitter.com/cryptodare" rel="nofollow" target="_blank"><i
+                                class="fa fa-twitter-square text-accent"></i></a>
+                        <a href="https://www.facebook.com/Cryptodare-2020623988220871" rel="nofollow" target="_blank"><i
+                                class="fa fa-facebook-official text-accent"></i></a><br/>
+                        <span class="c-white">© 2017 BTCInsight.com</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Main content-->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row m-t-sm">
+                <div class="col-md-12">
+                    <div class="panel panel-filled">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <img src="{{ url_for('static', filename='images/coinicons/btc.png')}}"
+                                             width="50px"
+                                             height="50px"/>
+                                        <h2 class="m-t-xs m-b-none">
+                                            Bitcoin
+                                        </h2>
+                                        <small>
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have suffered alteration in some form Ipsum available.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <table class="table small m-t-sm">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://bitcoin.org/" rel="nofollow" target="_blank"><strong
+                                                        class="c-white"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i> Bitcoin</strong>
+                                                    Website <span>&#8544;</span></a>
+                                            </td>
+                                            <td>
+                                                <a href="https://www.bitcoin.com/" rel="nofollow"
+                                                   target="_blank"><strong class="c-white"><i
+                                                        class="fa fa-external-link" aria-hidden="true"></i>
+                                                    Bitcoin</strong> Website
+                                                    <span>&#8544;</span><span>&#8544;</span></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://bitcointalk.org/" rel="nofollow"
+                                                   target="_blank"><strong class="c-white"><i class="fa fa-comments"
+                                                                                              aria-hidden="true"></i>
+                                                    Bitcoin</strong> Talk</a>
+                                            </td>
+                                            <td>
+                                                <a href="https://forum.bitcoin.com/" rel="nofollow"
+                                                   target="_blank"><strong class="c-white"><i class="fa fa-list"
+                                                                                              aria-hidden="true"></i>
+                                                    Bitcoin</strong> Forum</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> Charts</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">Social</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">
+                                    <div class="panel-tools">
+                                        <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                        <a class="panel-close"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    DataTables with a growing list of cryptocurrencies.
+                                </div>
+                                <div class="panel-body">
+                                    <div class="crtools-graph" id="crtools-graph-283885356"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">
+                                    <div class="panel-tools">
+                                        <a class="panel-toggle"><i class="fa fa-chevron-up"></i></a>
+                                        <a class="panel-close"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <a class="twitter-timeline" data-width="392" data-height="633"
+                                       data-theme="dark"
+                                       href="https://twitter.com/Bitcoin?ref_src=twsrc%5Etfw">Tweets by Bitcoin</a>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                    <div class="fb-page col-md-4" data-href="https://www.facebook.com/bitcoinchart/"
+                                         rel="nofollow" data-tabs="timeline" data-width="392" data-height="633"
+                                         data-small-header="false" data-adapt-container-width="true"
+                                         data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote cite="https://www.facebook.com/bitcoinchart/"
+                                                    class="fb-xfbml-parse-ignore"><a
+                                                href="https://www.facebook.com/bitcoinchart/" rel="nofollow">Bitcoin</a>
+                                        </blockquote>
+                                    </div>
+                                    <div id="reddit" class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Vendor scripts -->
+{% include 'custom/footer-js.html' %}
+<script src="{{ url_for('static', filename='assets/js/crtools.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/chartjs/Chart.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/amcharts/amcharts.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/amcharts/serial.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/amcharts/light.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/amcharts/responsive.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/libs/amcharts/amstock.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        crtools.graph.init({"toolID":"crtools-graph-283885356","coin":"BTC","fiat":"USD,EUR","period":"1M,1Y","graphColor":"","cursorColor":""});
+        $('#tableExample1').DataTable({
+            "dom": 't'
+        });
+
+        $('#tableExample2').DataTable({
+            "dom": "<'row'<'col-sm-6'l><'col-sm-6'f>>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
+            "lengthMenu": [ [6, 25, 50, -1], [6, 25, 50, "All"] ],
+            "iDisplayLength": 6,
+        });
+
+        $('#tableExample3').DataTable({
+            dom: "<'row'<'col-sm-4'l><'col-sm-4 text-center'B><'col-sm-4'f>>tp",
+            "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
+            buttons: [
+                {extend: 'copy',className: 'btn-sm'},
+                {extend: 'csv',title: 'bitcoin_csv', className: 'btn-sm'},
+                {extend: 'pdf', title: 'bitcoin_pdf', className: 'btn-sm'},
+                {extend: 'print',className: 'btn-sm'}
+            ],
+        });
+    });
+    var rScript = document.createElement("script");
+        document.write = function(text) {
+            document.getElementById("reddit").innerHTML += text;
+        };
+        rScript.src = "https://www.reddit.com/r/bitcoin.embed?limit=9&bgcolor=000000";
+        document.body.appendChild(rScript);
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>

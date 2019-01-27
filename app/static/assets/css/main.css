@@ -1,0 +1,188 @@
+.crtools-table table.dataTable thead th {
+    background-image: none !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.crtools-table table.dataTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.crtools-table table.dataTable tbody tr {
+    height: 70px!important;
+}
+.crtools-table .dataTables_scrollBody{
+    /*overflow: hidden!important;*/
+}
+
+.crtools-table .myChart{
+    margin: auto;
+}
+
+.crtools-table .red-text{
+    color: #f44336;
+}
+
+.crtools-table .green-text{
+    color: #4CAF50;
+}
+
+.crtools-table .currency{
+    float: left;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.crtools-table .dataTables_length{
+    float: left;
+}
+
+.crtools-table table{
+    width: 100%;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.crtools-table .input-sm{
+    height: auto;
+}
+
+.crtools-table .input-sm{
+    height: auto;
+}
+
+.crtools-graph .sg-buttons{
+    padding: 10px 0;
+}
+
+.crtools-graph .fiat-button{
+    margin-right: 15px;
+}
+
+.crtools-graph .period-button{
+    margin-right: 10px;
+}
+
+.crtools-graph .fiat-button{
+    font-weight: bold;
+    border: 2px solid #d7d7d7;
+    background-color: #fff;
+}
+.crtools-graph .fiat-button:hover,
+.crtools-graph .fiat-button.active{
+    border: 2px solid #ffcc04;
+}
+
+.crtools-graph .period-button{
+    background-color: #f7f7f7;
+    border: none;
+    width: 50px;
+}
+.crtools-graph .period-button:hover,
+.crtools-graph .period-button.active{
+    font-weight: bold;
+    background-color: #e7f0fa;
+}
+
+.currency-button:last-child{
+    margin-right: 30px;
+}
+
+.crtools-table .table-cell{
+    display: table-cell;
+}
+.crtools-table div.dataTables_wrapper div.dataTables_paginate{
+    white-space: inherit;
+}
+
+.crtools-table .coin-ico{
+    vertical-align: middle;
+    text-align: right;
+    position: relative;
+    padding-right: 20px;
+}
+
+.crtools-table .coin-name{
+    text-align: left;
+}
+
+.crtools-converter{
+    max-width: 250px;
+}
+
+.crtools-converter div.from{
+    padding-bottom: 10px;
+}
+
+.crtools-converter div.from, div.to{
+    padding-top: 5px;
+}
+.crtools-converter span.from, span.to{
+    width: 52px;
+}
+
+.crtools-converter .input-group-ct {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.crtools-converter .input-group-addon-ct {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid rgba(0,0,0,.15);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    /*border-radius: .25rem;*/
+}
+
+.crtools-converter .input-group-ct .form-control-ct:not(:last-child),
+.crtools-converter .input-group-addon-ct:not(:last-child),
+.crtools-converter .input-group-btn:not(:first-child)>.btn-group:not(:last-child)>.btn,
+.crtools-converter .input-group-btn:not(:first-child)>.btn:not(:last-child):not(.dropdown-toggle),
+.crtools-converter .input-group-btn:not(:last-child)>.btn,
+.input-group-btn:not(:last-child)>.btn-group>.btn,
+.crtools-converter .input-group-btn:not(:last-child)>.dropdown-toggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.crtools-converter .input-group-ct .form-control-ct, .input-group-addon, .input-group-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crtools-converter .input-group-ct .form-control-ct {
+    position: relative;
+    z-index: 2;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.crtools-converter .form-control-ct {
+    display: block;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}

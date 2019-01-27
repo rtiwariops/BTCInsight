@@ -1,0 +1,24 @@
+<tr>
+    <td>1</td>
+    <td><img src="{{ url_for('static', filename='images/coinicons/btc.png') }}"
+             alt="Bitcoin (BTC)" style="width:25px;max-width: inherit;"> BTC
+    </td>
+    <td><a href="/bitcoin">BitCoin</a></td>
+    <td>$ {{ btcprice }}</td>
+    <td>$ {{ btcmktcapprice }}</td>
+    <td>Ƀ {{ btcsupply }}</td>
+    {% if btcchange24hour < 0%}
+    <td style="color: red">$ {{ btcchange24hour }}</td>
+    {% else %}
+    <td style="color: #33cf39">$ {{ btcchange24hour }}</td>
+    {% endif %}
+    {% if btcchangepct24hour < 0%}
+    <td style="color: red">% {{ btcchangepct24hour }}</td>
+    {% else %}
+    <td style="color: #33cf39">% {{ btcchangepct24hour }}</td>
+    {% endif %}
+    <td>
+        <span id="sparkline7"></span>
+    </td>
+    <td><a href="/bitcoin" class="btn btn-default btn-xs active">View</a></td>
+</tr>
