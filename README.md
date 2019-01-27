@@ -9,6 +9,7 @@ BTCInsight is developed in python on top of flask. It tracks the movements of bi
 4. Go to browser and type : http://localhost:5000/
 
 You will see the following screenshots:
+
 <img src="https://github.com/rtiwariops/BTCInsight/blob/master/images/btc_insight_img.png" width="600" height="342">
 
 <img src="https://github.com/rtiwariops/BTCInsight/blob/master/images/social_img.png" width="600" height="342">
