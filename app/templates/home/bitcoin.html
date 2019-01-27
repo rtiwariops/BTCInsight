@@ -11,14 +11,50 @@
     <title>BTCInsight | Reporting, Analysis and detailed statistics of Bitcoin</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    {% include 'header.html' %}
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/fontawesome/css/font-awesome.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/animate.css/animate.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/datatables/datatables.min.css') }}"/>
+    <!-- App styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pe-icons/pe-icon-7-stroke.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pe-icons/helper.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/stroke-icons/style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
 <!-- Wrapper-->
 <div class="wrapper">
-    <!-- Header-->
-    {% include 'inner-header.html' %}
-    <!-- End header-->
+  <!-- Navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="/">BTCInsight
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="versions.html">Versions
+                            <span class="label label-warning pull-right">1.01</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Navigation-->
     <aside class="navigation">
         <nav>
@@ -158,7 +194,18 @@
     </section>
 </div>
 <!-- Vendor scripts -->
-{% include 'footer-js.html' %}
+<!-- Vendor scripts -->
+<script src="{{ url_for('static', filename='vendor/pacejs/pace.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/d3/d3.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/topojson/topojson.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/datamaps/datamaps.world.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/moment/moment.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/datatables/datatables.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/sparkline/index.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/luna.js') }}"></script>
+
 <script src="{{ url_for('static', filename='assets/js/crtools.min.js') }}"></script>
 <script src="{{ url_for('static', filename='assets/js/libs/chartjs/Chart.bundle.min.js') }}"></script>
 <script src="{{ url_for('static', filename='assets/js/libs/amcharts/amcharts.js') }}"></script>
