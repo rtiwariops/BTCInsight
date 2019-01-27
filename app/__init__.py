@@ -6,7 +6,7 @@ from flask import Flask
 # local imports
 from instance.config import app_config
 
-app = Flask(__name__, instance_relative_config=True)
+app = Flask(__name__)
 
 
 def create_app(config_name):
